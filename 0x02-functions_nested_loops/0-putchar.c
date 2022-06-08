@@ -1,16 +1,16 @@
 #include "main.h"
 /**
-* main - Print the word "_putchar"
-*
-* Return: 0 (Success)
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Succes)
+ */
 int main(void)
 {
-int i;
-char p[] = "_putchar";
-for (i = 0; i < 9; i++)
+char *sh = "_putchar";
+while (*sh)
 {
-_putchar(p[i]);
+_putchar(*sh);
+sh++;
 }
 _putchar('\n');
 return (0);
